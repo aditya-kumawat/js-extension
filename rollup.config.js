@@ -16,7 +16,13 @@ export default {
     './src/prototypes',
     './src/prototypes/Array',
     './src/prototypes/Promise',
-    './src/utils'
+    './src/utils',
+    './src/utils/array',
+    './src/utils/debugging',
+    './src/utils/fp',
+    './src/utils/function',
+    './src/utils/operators',
+    './src/utils/promise',
   ],
   plugins: [
     alias({

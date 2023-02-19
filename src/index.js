@@ -1,2 +1,2 @@
-import './prototypes';
-export * from './utils';
+import "./prototypes";
+export * from "./utils";

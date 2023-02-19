@@ -1,15 +1,7 @@
-Array.prototype.asyncFilter = async function(callback) {
-  const arr = this;
-  let out = [];
-  
-  let index = 0;
-  while(index < arr.length) {
-    const isValid = await callback(arr[index], index, arr);
-    if(isValid) out.push(arr[index]);
-    index++;
-  }
+import { asyncFilter } from "@/utils/array";
 
-  return out;
+Array.prototype.asyncFilter = async function (callback) {
+  return asyncFilter(this, out);
 };
 
 // [1, 2, 3]

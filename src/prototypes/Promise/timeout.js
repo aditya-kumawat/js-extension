@@ -1,19 +1,9 @@
-import timeoutPromise from '@/utils/timeoutPromise';
+import {timeoutPromise} from '@/utils/promise';
 
 Promise.prototype.timeout = function(timeoutDuration, error) {
-  const promise = this;
-  // if(error === undefined) {
-  //   error = new Error('Timeout error', promise);
-  // }
-
   return Promise.race([
-    promise,
+    this,
     timeoutPromise(timeoutDuration, error)
-    // new Promise((resolve, reject) => {
-    //   setTimeout(() => {
-    //     reject(error);
-    //   }, timeoutDuration);
-    // })
   ]);
 }
 

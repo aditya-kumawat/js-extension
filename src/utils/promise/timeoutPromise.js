@@ -1,4 +1,4 @@
-const timeoutPromise = (timeoutDuration, error) => {
+export const timeoutPromise = (timeoutDuration, error) => {
   if(error === undefined) {
     error = 'Timeout error';
   }
@@ -7,7 +7,5 @@ const timeoutPromise = (timeoutDuration, error) => {
     setTimeout(() => { reject(error) }, timeoutDuration)
   })
 }
-
-export default timeoutPromise;
 
 // const promise = timeoutPromise(100, 'Custom timeout error');

@@ -1,4 +1,4 @@
-const pipe = (fns) => {
+export const pipe = (fns) => {
   return function(...args) {
     return fns.reduce((out, fn, index) => {
       if(index === 0) return fn(...out);
@@ -6,8 +6,6 @@ const pipe = (fns) => {
     }, args);
   }
 }
-
-export default pipe;
 
 // const ans = pipe([
 //   (a, b) => a + b,

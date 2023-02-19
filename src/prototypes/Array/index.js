@@ -1,3 +1,4 @@
-import './asyncReduce';
-import './asyncMap';
-import './asyncFilter';
+import "./asyncForEach";
+import "./asyncMap";
+import "./asyncFilter";
+import "./asyncReduce";

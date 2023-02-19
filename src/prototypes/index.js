@@ -1,3 +1,2 @@
-import './Array';
-import './Function';
-import './Promise';
+import "./Array";
+import "./Promise";
