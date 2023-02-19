@@ -1,8 +1,8 @@
 export const memoize = (fn) => {
   if (fn.length === 1) {
-    let cache = {};
+    const cache = {};
     return (...args) => {
-      let strX = JSON.stringify(args);
+      const strX = JSON.stringify(args);
       return strX in cache ? cache[strX] : (cache[strX] = fn(...args));
     };
   } else {

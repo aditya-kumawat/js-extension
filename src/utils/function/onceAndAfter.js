@@ -1,7 +1,7 @@
-const onceAndAfter = (f, g) => {
+export const onceAndAfter = (f, g) => {
   let toCall = f;
   return (...args) => {
-    let result = toCall(...args);
+    const result = toCall(...args);
     toCall = g;
     return result;
   };

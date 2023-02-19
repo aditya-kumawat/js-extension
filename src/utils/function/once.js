@@ -4,7 +4,7 @@ export const once = (fn) => {
   return (...args) => {
     if (!done) {
       done = true;
-      result = func(...args);
+      result = fn(...args);
     }
     return result;
   };

@@ -1,4 +1,4 @@
-const partialCurry = (fn, len = fn.length) =>
+export const partialCurry = (fn, len = fn.length) =>
   len === 0
     ? fn()
     : (...pp) => partialCurry(fn.bind(null, ...pp), len - pp.length);

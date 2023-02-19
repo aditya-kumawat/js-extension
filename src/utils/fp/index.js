@@ -1,2 +1,2 @@
-export * from './pipe';
-export * from './asyncPipe';
+export * from "./pipe";
+export * from "./asyncPipe";

@@ -1,7 +1,7 @@
 import { asyncFilter } from "@/utils/array";
 
 Array.prototype.asyncFilter = async function (callback) {
-  return asyncFilter(this, out);
+  return asyncFilter(this, callback);
 };
 
 // [1, 2, 3]

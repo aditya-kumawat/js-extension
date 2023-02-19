@@ -1,2 +1,2 @@
-export * from './promisify';
-export * from './timeoutPromise';
+export * from "./promisify";
+export * from "./timeoutPromise";

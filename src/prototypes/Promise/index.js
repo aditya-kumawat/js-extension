@@ -1,1 +1,1 @@
-import './timeout';
+import "./timeout";

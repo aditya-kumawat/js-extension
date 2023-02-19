@@ -1,2 +1,2 @@
-export * from './addLogging';
-export * from './addTiming';
+export * from "./addLogging";
+export * from "./addTiming";

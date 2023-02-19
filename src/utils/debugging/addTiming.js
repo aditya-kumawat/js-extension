@@ -5,7 +5,7 @@ const myGet = () => Date.now();
 export const addTiming =
   (fn, getTime = myGet, output = myPut) =>
   (...args) => {
-    let tStart = getTime();
+    const tStart = getTime();
     try {
       const valueToReturn = fn(...args);
       output("normal exit", fn.name, tStart, getTime());

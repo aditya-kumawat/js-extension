@@ -1,5 +1,5 @@
 export const asyncFilter = async function (arr, callback) {
-  let out = [];
+  const out = [];
 
   let index = 0;
   while (index < arr.length) {
